@@ -28,7 +28,7 @@ public class Lab2 {
     // for the first and second coursework.
     public float desiredExamMarkToAchieve(float cswk1, float cswk2, float moduleMark) {
         float x = percentageOf(15,100)*cswk1+percentageOf(25,100)*cswk2;
-        float x = (moduleMark - x)/percentageOf(60,100);
+        x = (moduleMark - x)/percentageOf(60,100);
         return x;
     }
 
@@ -37,8 +37,8 @@ public class Lab2 {
     // first two components as well as the weights of all components and
     // the desired overall mark
     public float markToAchieve(float c1, float w1, float c2, float w2, float overall) {
-      float x = percentageOf(w1,100)*c1+percentageOf(w2,100)*c2;
-      float x = (overall - x)/percentageOf(100-w1-w2,100);
-      return x;
+      float x2 = percentageOf(w1,100)*c1+percentageOf(w2,100)*c2;
+      x2 = (overall - x2)/percentageOf(100-w1-w2,100);
+      return x2;
     }
 }
